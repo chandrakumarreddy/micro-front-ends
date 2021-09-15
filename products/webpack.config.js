@@ -15,6 +15,11 @@ module.exports = {
       exposes: {
         "./ProductIndex": "./src/index.js",
       },
+      shared: {
+        faker: {
+          singleton: true,
+        },
+      },
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
